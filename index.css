@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1, h2{
+text-align: center;
+}
+.featured{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 40px;
+}
