@@ -16,7 +16,10 @@ div.initial img {
     border: 2px inset grey;
     border-radius: 20% 5%;
 }
-p {font-size: 2vw;}
+p {
+    font-size: 2vw;
+    width: 90%;
+}
 
 h1 {
     font-size: 3vw;
