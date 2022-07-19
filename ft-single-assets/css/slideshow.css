@@ -90,7 +90,7 @@
   to {opacity: 1}
 }
 
-.click-buttons { text-align: center;}
+.click-buttons { margin-left: 20vw ;}
 div.text, div.numbertext {
     color: red;
     font-size: 2vw;
