@@ -95,3 +95,72 @@ body {
 	margin-left: 40px;
 }
 
+/* below navigation */
+.navbarr {
+	background-color: #FAFAFA;
+	width: 99%;
+	border-bottom: 1px solid grey;
+	position: absolute;
+
+}
+.navbbb {
+	padding: 15px;
+	align-items: center;
+	/* width: 80%; */
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+
+}
+.logoo > h1 {
+	font-family: "Oleo Script", cursive;
+	margin-right: -1020px;
+	margin-left: 40px;
+	margin-top: 50px;
+}
+.navll{
+    display: flex;
+    text-decoration: none;
+	margin-left: 50px;
+	margin-top: 50px;
+
+}
+.navll > ul {
+	display: flex !important;
+	align-items: center;
+}
+.navll > ul > li > a {
+	list-style: none;
+	font-size: 17px;
+	/* padding: 15px; */
+	margin-right: 80px;
+	text-decoration: none;
+	color: black;
+	justify-content:space-between;
+	/* margin-left: -120px; */
+
+}
+.navll > ul > li {
+	list-style: none;
+}
+.navll > ul > li > a:hover {
+	color: #0F298B;
+	font-weight: 600;
+}
+.navll ul > li > .visited-link:visited {
+	color: #0F298B;
+	font-weight: 700;
+}
+/* below navigation */
+
+
+
+
+
+
+/* navigation part */
+
+
+
+
+
