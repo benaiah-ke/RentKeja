@@ -1,0 +1,16 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 96%;
+    margin: auto;
+    background-color: cornsilk;
+} 
+div.initial{
+    text-align: center;
+}   
+div.initial img {
+    display: block;
+    width: 100%;
+    padding: auto;
+    border: 2px inset grey;
+    border-radius: 20% 5%;
+}
