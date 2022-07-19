@@ -154,11 +154,29 @@ body {
 /* below navigation */
 
 
-
-
-
-
 /* navigation part */
+
+/* button */
+#hbtn{
+	margin-left: 300px;
+	margin-right: 80px;
+	background-color:black;
+	padding: 5px;
+}
+.btnnn a{
+	color:white;
+	text-decoration: none;
+}
+.ncbutton {
+    font-size: 23px;
+    border: none;
+    background-color: inherit;
+    font-weight: 600;
+	color:blue;
+}
+
+/* button */
+
 
 
 
