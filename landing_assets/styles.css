@@ -1,0 +1,44 @@
+/* start */
+* {
+	margin: 0;
+	padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+html,body {
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+	min-height: 100%;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+	}
+body {
+	width: 100%;
+	overflow: scroll;
+	overflow-x: hidden;
+	background-color: #f4f2e9;
+	/* background-color: rgb(248, 244, 244); */
+	margin: auto;
+    min-height: 100vh;
+    min-width: 100%;
+	max-width: 500%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+/* Poppins, Inter */
+@media (min-width: 1240px) {
+	.container {
+		max-width: 1290px !important;
+		margin: auto !important;
+		height: 100%;
+	}
+}
+.container {
+	width: 100%;
+}
+
+/* start */
+
+
