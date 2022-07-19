@@ -42,3 +42,56 @@ body {
 /* start */
 
 
+/* navigation part */
+.navbar {
+	background-color: #FAFAFA;
+	width: 100%;
+	border-bottom: 1px solid grey;
+	position: fixed;
+
+}
+.navb {
+	padding: 15px;
+	align-items: center;
+	/* width: 80%; */
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+
+}
+.navl{
+    display: flex;
+    text-decoration: none;
+}
+.navl > ul {
+	display: flex !important;
+	align-items: center;
+}
+.navl > ul > li > a {
+	list-style: none;
+	font-size: 17px;
+	/* padding: 15px; */
+	margin-right: 80px;
+	text-decoration: none;
+	color: black;
+	justify-content:space-between;
+	/* margin-left: -120px; */
+
+}
+.navl > ul > li {
+	list-style: none;
+}
+.navl > ul > li > a:hover {
+	color: #0F298B;
+	font-weight: 600;
+}
+.navl ul > li > .visited-link:visited {
+	color: #0F298B;
+	font-weight: 700;
+}
+.logo > h1 {
+	font-family: "Oleo Script", cursive;
+	margin-right: -1020px;
+	margin-left: 40px;
+}
+
