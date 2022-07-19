@@ -7,8 +7,39 @@ text-align: center;
 }
 .featured{
     display: flex;
+    border: solid grey 1px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 30px;
     margin: 40px;
+}
+.qwetu{
+    display: flex;
+    border: solid 1px grey;
+    background-color: aqua;
+    border-radius: 15%;
+    align-items: center;
+}
+img{
+    border-radius: 30%;
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    padding: 30px;
+    padding-top: 20px;
+
+}
+.featured div{
+    display: flex;
+    border: solid 1px grey;
+    background-color: aqua;
+    border-radius: 15%;
+    align-items: center;
+    padding: 20px;
+    margin: 40px;
+}
+#names{
+    padding-bottom: 150px;
+    font-size: 22px;
+    color: blueviolet;
 }
