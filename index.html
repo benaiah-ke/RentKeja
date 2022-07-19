@@ -27,15 +27,21 @@
             </div>
             <div class="welcome">
                <h2>Welcome Back!</h2>
-               <p>Enter your username or email address and password to sign in</p>
+               <p>Enter your email address and password to sign in</p>
             </div>
         </div>
         <form class="login-form">
-            <label for="login-name">Username/Email</label>
-            <input type="text" placeholder="Benaiah12 or ben@gmail.com" id="login-name" name="login-name">
-            <label>Password</label>
-            <input type="password" placeholder="enter password" id="login-pwd" name="login-pwd">
-            <input type="submit" id="login-btn">
+            <div class="login-item">
+                <label for="login-name">Email or Username</label>
+                <input type="text" placeholder="enter email or username" id="login-name" name="login-name">
+            </div>
+            <div class="login-item">
+                <label>Password</label>
+                <input type="password" placeholder="enter password" id="login-pwd" name="login-pwd">
+            </div>
+            <div class="login-item">
+                <input type="submit" id="login-btn">
+            </div>
         </form>
         <div class="bottom-area">
             <p class="forgot-pwd">Forgot Password</p>
