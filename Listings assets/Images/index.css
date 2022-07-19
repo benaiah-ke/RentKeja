@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F5F5F5;
+    height: 100vh;
+    width: 100vw;
+}
+h1, h2{
+text-align: left;
+font-size: 32px;
+padding-left: 40px;
+margin-top: 40px;
+}
+.featured{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 40px;
+}
+.featured div{
+    display: flex;
+    border: solid 1px #DCDCEB;
+    background-color: white;
+    border-radius: 13%;
+    align-items: center;
+    padding: 20px;
+    margin: 40px;
+}
+img{
+    border-radius: 20%;
+    height: 200px;
+    width: 190px;
+
+}
+#name{
+    padding-bottom: 150px;
+    color: #110229;
+    font-size: 20px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+#classification ,#slots{
+    padding-left: 20px;
+    padding-top :100px; 
+    color: #110229;
+}
+#slots{
+    color: green;
+    font-size: 18px;
+}
+#footer{
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+}
+.footer{
+    text-align: center;
+    padding-bottom: 200px;
+    font-size: 22px;
+    margin: 40px;
+}
+.footer h2{
+    text-align: center;
+    padding: 50px;
+}
+input{
+    height: 40px;
+    width: 400px;
+}
+button{
+    height: 40px;
+    width: 200px;
+    background-color: #F85A47;
+    color: white;
+}
