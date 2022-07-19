@@ -24,7 +24,7 @@ margin-top: 40px;
     display: flex;
     border: solid 1px #1DAEFF;
     background-color: white;
-    border-radius: 15%;
+    border-radius: 13%;
     align-items: center;
     padding: 20px;
     margin: 40px;
@@ -40,6 +40,9 @@ img{
     color: #110229;
     font-size: 20px;
     font-weight: bold;
+}
+a{
+    text-decoration: none;
 }
 #classification ,#slots{
     padding-left: 20px;
