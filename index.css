@@ -1,20 +1,36 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F5F5F5;
+    height: 100vh;
+    width: 100vw;
 }
 h1, h2{
 text-align: center;
+font-size: 32px;
 }
 .featured{
     display: flex;
-    border: solid grey 1px;
     flex-direction: row;
     justify-content: space-around;
     padding: 30px;
     margin: 40px;
 }
+.featured div{
+    display: flex;
+    border: solid 1px #1DAEFF;
+    background-color: white;
+    border-radius: 15%;
+    align-items: center;
+    padding: 20px;
+    margin: 40px;
+
+}
 .qwetu{
     display: flex;
+    flex-direction: row;
     border: solid 1px grey;
     background-color: aqua;
     border-radius: 15%;
@@ -24,22 +40,20 @@ img{
     border-radius: 30%;
     height: 200px;
     width: 200px;
-    justify-content: center;
-    padding: 30px;
-    padding-top: 20px;
 
 }
-.featured div{
-    display: flex;
-    border: solid 1px grey;
-    background-color: aqua;
-    border-radius: 15%;
-    align-items: center;
-    padding: 20px;
-    margin: 40px;
-}
-#names{
+#name{
     padding-bottom: 150px;
-    font-size: 22px;
-    color: blueviolet;
+    color: #110229;
+    font-size: 20px;
+    font-weight: bold;
+}
+#classification ,#slots{
+    padding-left: 20px;
+    padding-top :100px; 
+    color: #110229;
+}
+#slots{
+    color: green;
+    font-size: 18px;
 }
