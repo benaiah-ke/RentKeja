@@ -33,13 +33,13 @@ font-size: 32px;
     flex-direction: row;
     border: solid 1px grey;
     background-color: aqua;
-    border-radius: 15%;
+    border-radius: 5%;
     align-items: center;
 }
 img{
-    border-radius: 30%;
+    border-radius: 20%;
     height: 200px;
-    width: 200px;
+    width: 190px;
 
 }
 #name{
