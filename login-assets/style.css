@@ -1,10 +1,10 @@
-/* Styling for about, login and signup pages */
+/* Styling for login and signup pages */
 
 *, *::before, *::after {
     box-sizing: border-box;
   }
 
-/* General html styling, partly overidden in about and signup */
+/* General html styling, partly overidden in signup */
 
 html {
 height: 100vh;
