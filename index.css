@@ -8,13 +8,15 @@ body{
     width: 100vw;
 }
 h1, h2{
-text-align: center;
+text-align: left;
 font-size: 32px;
+padding-left: 40px;
+margin-top: 40px;
 }
 .featured{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 30px;
     margin: 40px;
 }
@@ -26,15 +28,6 @@ font-size: 32px;
     align-items: center;
     padding: 20px;
     margin: 40px;
-
-}
-.qwetu{
-    display: flex;
-    flex-direction: row;
-    border: solid 1px grey;
-    background-color: aqua;
-    border-radius: 5%;
-    align-items: center;
 }
 img{
     border-radius: 20%;
