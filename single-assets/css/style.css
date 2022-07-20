@@ -11,58 +11,43 @@ h1, h2, h3, h4 {
     font-family: "montserrat", sans-serif;
 }
 
-/* header */
-
-.navbar {
-	background-color: #FAFAFA;
-	width: 100%;
-	border-bottom: 1px solid grey;
-    margin-bottom: 10vh;
-
-}
-.navb {
-	padding: 15px;
-	align-items: center;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-
-}
-.navl{
+/* Nav */
+nav {
     display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1px solid lightgray;
+    align-items: center;
+}
+nav h2 { margin-left: 5px;}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 40%;
+    font-weight: 700;
+}
+button#login {
+    width: 8vw;
+    height: 5vh;
+    margin-right: 5px;
+    color: white;
+    background-color: black;
+}
+button#login:hover {
+    color: black;
+    background-color: red;
+    border: 3px inset black;
+    width: 8.1vw;
+}
+nav a {
     text-decoration: none;
+    color: black;
 }
-.navl > ul {
-	display: flex !important;
-	align-items: center;
+nav a:hover {
+    color: blue;
 }
-.navl > ul > li > a {
-	list-style: none;
-	font-size: 17px;
-	margin-right: 80px;
-	text-decoration: none;
-	color: black;
-	justify-content:space-between;
-
-}
-.navl > ul > li {
-	list-style: none;
-}
-.navl > ul > li > a:hover {
-	color: #0F298B;
-	font-weight: 600;
-}
-.navl ul > li > .visited-link:visited {
-	color: #0F298B;
-	font-weight: 700;
-}
-.logo > h1 {
-	font-family: "Oleo Script", cursive;
-	margin-right: -1020px;
-	margin-left: 40px;
-}
-
-/* End of header */
+/* Nav end */
 
 h1 { color: rgb(231, 59, 59);}
 
@@ -90,7 +75,7 @@ h1 { color: rgb(231, 59, 59);}
     color: green;
     position: absolute;
     right: 16vw;
-    top: 40vh;
+    top: 27vh;
 }
 
 div.pricing {
