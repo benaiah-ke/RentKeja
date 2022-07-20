@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
 }
@@ -8,6 +8,7 @@ body{
     width: 100vw;
 }
 h1, h2{
+font-family: 'Inter', sans-serif;
 text-align: left;
 font-size: 32px;
 padding-left: 40px;
@@ -20,26 +21,30 @@ margin-top: 40px;
     padding: 30px;
     margin: 40px;
 }
+
 .featured div{
     display: flex;
-    border: solid 1px #DCDCEB;
+    border: #DCDCEB;
     background-color: white;
-    border-radius: 13%;
-    align-items: center;
-    padding: 20px;
-    margin: 40px;
+    border-radius: 50px;
+    margin: 30px
 }
 img{
-    border-radius: 20%;
-    height: 200px;
-    width: 190px;
+    border-radius: 50px;
+    height: 190px;
+    width: 160px;
 
 }
-#name{
+.name{
+    padding-bottom: 200px;
+    height: 5px;
+     */
+/* #name{
+    font-family: 'AbeeZee', sans-serif;
     padding-bottom: 150px;
     color: #110229;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 17px;
+    font-weight: 600;
 }
 a{
     text-decoration: none;
@@ -47,11 +52,64 @@ a{
 #classification ,#slots{
     padding-left: 20px;
     padding-top :100px; 
-    color: #110229;
-}
-#slots{
+    color: #110229; */
+
+/* #slots{
     color: green;
     font-size: 18px;
+} */
+body{
+    background-color: #F5F5F5;
+    height: 100vh;
+    width: 100vw;
+}
+.featured{
+  display: flex;  
+  border: solid 1px #1DAEFF;
+  flex-direction: row;
+  width: 585px;
+  height: 249px;
+  background-color: white;
+  border-radius: 30px;
+  font-family: 'abeezee',sans-serif;
+}
+h1,h2{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    color: #110229;
+    font-size: 38px;
+    line-height: 46.32px;
+}
+img{
+    height: 191px;
+    width: 158px;
+    border-radius: 30px;
+    padding: 10px;
+}
+.line1{
+    padding: 30px;
+}
+#name{
+    padding-left: 90px;
+}
+span{
+    padding: 30px;
+    color: #8F90A6;
+}
+#sp{
+    background-color:#8F90A6;
+    height: 41px;
+    width: 108px;
+    border-radius: 10px;
+    color: white;
+}
+p{
+    padding: 15px;
+}
+.line1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 #footer{
     font-size: larger;
