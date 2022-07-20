@@ -1,0 +1,135 @@
+body {
+    width: 80%;
+    margin: auto;
+    background-color: #F4F2E9;
+}
+p {
+    font-family: "abeezee", sans-serif;
+    line-height: 40px;
+}
+h1, h2, h3, h4 {
+    font-family: "montserrat", sans-serif;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1px solid lightgray;
+    align-items: center;
+}
+nav h2 { margin-left: 5px;}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 40%;
+    font-weight: 700;
+}
+button#login {
+    width: 8vw;
+    height: 5vh;
+    margin-right: 5px;
+    color: white;
+    background-color: black;
+}
+button#login:hover {
+    color: black;
+    background-color: red;
+    border: 3px inset black;
+    width: 8.1vw;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+nav a:hover {
+    color: blue;
+}
+/* Nav end */
+
+h1 { color: rgb(231, 59, 59);}
+
+#everything {
+    display: flex;
+    justify-content: space-between;
+}
+.property-left {
+    width: 60%;
+    border-bottom: 1px solid lightgray;
+}
+.booking {
+    width: 30%;
+    border: 1px solid lightgray;
+    margin-top: 13vh;
+    padding: 20px;
+    height: 120vh;
+    line-height: 30px;
+}
+.slideshow-container {
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgrey;
+}
+.verified {
+    color: green;
+    position: absolute;
+    right: 16vw;
+    top: 27vh;
+}
+
+div.pricing {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.roomtype {
+    display: inline-block;
+    background-color: rgb(213, 210, 210);
+    width: 23.7vw;
+    height: 5vh;
+    padding-top: 3px;
+    border-bottom: 1px solid rgb(213, 210, 210);
+    text-align: center;
+}
+button.book {
+    background-color: rgb(240, 84, 84);
+    text-align: center;
+    width: 24vw;
+    padding: 2vh 0;
+    border-radius: 5px;
+}
+button.book:hover{
+    border: 3px outset black;
+}
+a.book {
+    text-decoration: none;
+    color: white;
+}
+
+.bookmark {
+    width: 10px;
+    height: 12px;
+}
+div.flextwo {
+    display: flex;
+    justify-content: space-evenly;
+}
+.flextwo li {
+    list-style: circle;
+    line-height: 40px;
+}
+.flextwo ul {
+    width: 80%;
+}
+.flextwo h4 {
+    width: 15%;
+}
+span {
+    color: red;
+}
+p.border-bottom {
+  border-bottom: 1px solid rgb(213, 210, 210);
+  padding-bottom: 20px;
+}
