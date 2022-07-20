@@ -1,63 +1,58 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: #F5F5F5;
-    height: 100vh;
-    width: 100vw;
-}
-h1, h2{
-font-family: 'Inter', sans-serif;
-text-align: left;
-font-size: 32px;
-padding-left: 40px;
-margin-top: 40px;
-}
-.featured{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px;
-    margin: 40px;
-}
-
-.featured div{
-    display: flex;
-    border: #DCDCEB;
-    background-color: white;
-    border-radius: 50px;
-    margin: 30px
-}
-img{
-    border-radius: 50px;
-    height: 190px;
-    width: 160px;
+.navbar {
+	background-color: #FAFAFA;
+	width: 100%;
+	border-bottom: 1px solid grey;
+	position: fixed;
 
 }
-.name{
-    padding-bottom: 200px;
-    height: 5px;
-     */
-/* #name{
-    font-family: 'AbeeZee', sans-serif;
-    padding-bottom: 150px;
-    color: #110229;
-    font-size: 17px;
-    font-weight: 600;
+.navb {
+	padding: 15px;
+	align-items: center;
+	/* width: 80%; */
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+
 }
-a{
+.navl{
+    display: flex;
     text-decoration: none;
 }
-#classification ,#slots{
-    padding-left: 20px;
-    padding-top :100px; 
-    color: #110229; */
+.navl > ul {
+	display: flex !important;
+	align-items: center;
+}
+.navl > ul > li > a {
+	list-style: none;
+	font-size: 17px;
+	/* padding: 15px; */
+	margin-right: 80px;
+	text-decoration: none;
+	color: black;
+	justify-content:space-between;
+	/* margin-left: -120px; */
 
-/* #slots{
-    color: green;
-    font-size: 18px;
-} */
+}
+.navl > ul > li {
+	list-style: none;
+}
+.navl > ul > li > a:hover {
+	color: #0F298B;
+	font-weight: 600;
+}
+.navl ul > li > .visited-link:visited {
+	color: #0F298B;
+	font-weight: 700;
+}
+.logo > h1 {
+	font-family: "Oleo Script", cursive;
+	margin-right: -1020px;
+	margin-left: 40px;
+}
 body{
     background-color: #F5F5F5;
     height: 100vh;
@@ -90,19 +85,22 @@ img{
 .line1{
     padding: 30px;
 }
+.featured div{
+    justify-content: center;
+    padding-top: 30px;
+}
 #name{
     padding-left: 90px;
 }
 span{
-    padding: 30px;
+    margin: 30px;
     color: #8F90A6;
 }
 #sp{
     background-color:#8F90A6;
-    height: 20px;
-    width: 80px;
     border-radius: 10px;
     color: white;
+    padding: 8px;
 }
 p{
     padding: 15px;
