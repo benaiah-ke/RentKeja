@@ -1,55 +1,92 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 96%;
+    width: 80%;
     margin: auto;
     background-color: #F4F2E9;
-} 
-
-div.initial{
-    text-align: center;
-}  
-
-div.initial img {
-    display: block;
-    width: 100%;
-    padding: auto;
-    border: 2px inset grey;
-    border-radius: 20% 5%;
 }
 p {
-    font-size: 2vw;
-    width: 90%;
+    font-family: "abeezee", sans-serif;
+    line-height: 40px;
+}
+h1, h2, h3, h4 {
+    font-family: "montserrat", sans-serif;
+}
+#everything {
+    display: flex;
+    justify-content: space-between;
+}
+.property-left {
+    width: 60%;
+    border-bottom: 1px solid lightgray;
+}
+.booking {
+    width: 30%;
+    border: 1px solid lightgray;
+    margin-top: 13vh;
+    padding: 20px;
+    height: 120vh;
+    line-height: 30px;
+}
+.slideshow-container {
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgrey;
+}
+.verified {
+    color: green;
+    position: absolute;
+    right: 16vw;
+    top: 18vh;
 }
 
-h1 {
-    font-size: 3vw;
-    margin: 5vh auto;
+div.pricing {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 0;
+    margin-bottom: 15px;
 }
-
-h2 {
-    font-size: 2.7vw;
-    margin: 10vh auto;
-}
-h3 {
-    font-size: 2.2vw;
-    margin-top: 6vh;
-}
-img.gym, .mini-market{
-    display: block;
-    width: 90%;
-    border-radius: 5%;
-}
-button {
-    position: fixed;
-    bottom: 20vh;
-    right: 1vw;
-    background-color: red;
-    font-weight: 900;
-    width: 10vw;
+.roomtype {
+    display: inline-block;
+    background-color: rgb(213, 210, 210);
+    width: 23.7vw;
     height: 5vh;
+    padding-top: 3px;
+    border-bottom: 1px solid rgb(213, 210, 210);
+    text-align: center;
 }
-button:hover {
-    border: 4px ridge aliceblue;
+div.book {
+    background-color: rgb(240, 84, 84);
+    text-align: center;
+    width: 24vw;
+    padding: 2vh 0;
+    border-radius: 5px;
+
+}
+a.book {
+    text-decoration: none;
+    color: white;
+}
+
+.bookmark {
+    width: 10px;
+    height: 12px;
+}
+div.flextwo {
+    display: flex;
+    justify-content: space-evenly;
+}
+.flextwo li {
+    list-style: circle;
+    line-height: 40px;
+}
+.flextwo ul {
+    width: 80%;
+}
+.flextwo h4 {
+    width: 15%;
+}
+span {
     color: red;
-    background-color: black;
+}
+p.border-bottom {
+  border-bottom: 1px solid rgb(213, 210, 210);
+  padding-bottom: 20px;
 }
