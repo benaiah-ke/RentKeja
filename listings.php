@@ -29,13 +29,11 @@ while($row = $result->fetch_array()){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Material Symbols and icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols" rel="stylesheet">
-    <link rel="stylesheet" href="/listings-assets/index.css">
+    <link rel="stylesheet" href="listings-assets/index.css">
     <title>Featured hostels</title>
 </head>
 <body>
@@ -69,7 +67,7 @@ while($row = $result->fetch_array()){
     <?php foreach($properties as $property){ // Open a loop ?>
         <?php if ($property['id'] < 3) { ?>
         <div class="featured" onClick="location.href='single-properties.html'">
-            <a href="#"><img src="landing_assets/images/hostel4.jpg" alt="Hostel image 1" /></a>
+            <a href="#"><img src="<?php echo $property['image']; ?>" alt="Hostel image 1" /></a>
             <div>
                 <p id="name"><?php echo $property['name']; ?></p>
                 <p id="type"><span><?php echo $property['type']; ?></span><span><?php echo $property['size']; ?></span></p>
@@ -84,7 +82,7 @@ while($row = $result->fetch_array()){
     <?php foreach($properties as $property){ // Open a loop ?>
         <?php if ($property['id'] < 3) { ?>
         <div class="featured" onClick="location.href='single-properties.html'">
-            <a href="#"><img src="landing_assets/images/hostel4.jpg" alt="Hostel image 1" /></a>
+            <a href="#"><img src="<?php echo $property['image']; ?>" alt="Hostel image 1" /></a>
             <div>
                 <p id="name"><?php echo $property['name']; ?></p>
                 <p id="type"><span><?php echo $property['type']; ?></span><span><?php echo $property['size']; ?></span></p>
@@ -94,8 +92,9 @@ while($row = $result->fetch_array()){
         <?php } // Close the if ?>
     <?php } // Close the loop ?>
     </div>
+
     <h2>Shared Rooms</h2>
-    <!-- Check if there are no results -->
+   <!-- Check if there are no results -->
 <?php if(count($properties) == 0){ ?>
             <div class="no-prop">
                 <h1>No properties listed yet. Check-in later</h1>
@@ -107,7 +106,7 @@ while($row = $result->fetch_array()){
     <?php foreach($properties as $property){ // Open a loop ?>
         <?php if ($property['id'] < 3) { ?>
         <div class="featured" onClick="location.href='single-properties.html'">
-            <a href="#"><img src="landing_assets/images/hostel4.jpg" alt="Hostel image 1" /></a>
+            <a href="#"><img src="<?php echo $property['image']; ?>" alt="Hostel image 1" /></a>
             <div>
                 <p id="name"><?php echo $property['name']; ?></p>
                 <p id="type"><span><?php echo $property['type']; ?></span><span><?php echo $property['size']; ?></span></p>
@@ -122,7 +121,7 @@ while($row = $result->fetch_array()){
     <?php foreach($properties as $property){ // Open a loop ?>
         <?php if ($property['id'] < 3) { ?>
         <div class="featured" onClick="location.href='single-properties.html'">
-            <a href="#"><img src="landing_assets/images/hostel4.jpg" alt="Hostel image 1" /></a>
+            <a href="#"><img src="<?php echo $property['image']; ?>" alt="Hostel image 1" /></a>
             <div>
                 <p id="name"><?php echo $property['name']; ?></p>
                 <p id="type"><span><?php echo $property['type']; ?></span><span><?php echo $property['size']; ?></span></p>
@@ -146,7 +145,7 @@ while($row = $result->fetch_array()){
     <?php foreach($properties as $property){ // Open a loop ?>
         <?php if ($property['id'] < 3) { ?>
         <div class="featured" onClick="location.href='single-properties.html'">
-            <a href="#"><img src="landing_assets/images/hostel4.jpg" alt="Hostel image 1" /></a>
+            <a href="#"><img src="<?php echo $property['image']; ?>" alt="Hostel image 1" /></a>
             <div>
                 <p id="name"><?php echo $property['name']; ?></p>
                 <p id="type"><span><?php echo $property['type']; ?></span><span><?php echo $property['size']; ?></span></p>
@@ -161,7 +160,7 @@ while($row = $result->fetch_array()){
     <?php foreach($properties as $property){ // Open a loop ?>
         <?php if ($property['id'] < 3) { ?>
         <div class="featured" onClick="location.href='single-properties.html'">
-            <a href="#"><img src="landing_assets/images/hostel4.jpg" alt="Hostel image 1" /></a>
+            <a href="#"><img src="<?php echo $property['image']; ?>" alt="Hostel image 1" /></a>
             <div>
                 <p id="name"><?php echo $property['name']; ?></p>
                 <p id="type"><span><?php echo $property['type']; ?></span><span><?php echo $property['size']; ?></span></p>
@@ -171,7 +170,6 @@ while($row = $result->fetch_array()){
         <?php } // Close the if ?>
     <?php } // Close the loop ?>
     </div>
-
 
     <div class="footer">
         <h2>Get Our Newsletter</h2>
