@@ -1,3 +1,27 @@
+<?php
+
+$host = 'localhost';
+$user = 'root';
+$password = '';
+$db_name = 'real_estate';
+
+$conn = mysqli_connect($host, $user, $password, $db_name);
+
+// Select all listings
+$query = "SELECT * FROM properties";
+
+$result = $conn->query($query);
+
+// We'll store the results here
+$properties = [];
+
+// Results are multiple rows, so we use a loop
+while($row = $result->fetch_array()){
+    array_push($properties, $row); // Add the row to the array
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
@@ -29,62 +53,44 @@
             </div>
         </div>
     </header>
-    <h1>Featured hostels</h1>
-    <h2>Browse July's list of featured hostels</h2>
-    <div class="line1">
-        <div class="featured">
-            <a href="#"><img src="/Listings assets/Images/qwetu wilson view.jpg" alt=""></a>
+    <!-- Check if there are no results -->
+<?php if(count($properties) == 0){ ?>
+            <div class="no-prop">
+                <h1>No properties listed yet. Check-in later</h1>
+            </div>
+        <?php } // Close the if ?>
+
+<div class="line1">
+    <!-- Loop on available properties, creating a div for each -->
+    <?php foreach($properties as $property){ // Open a loop ?>
+        <?php if ($property['id'] < 3) { ?>
+        <div class="featured" onClick="location.href='single-properties.html'">
+            <a href="#"><img src="landing_assets/images/hostel4.jpg" alt="Hostel image 1" /></a>
             <div>
-                <p id="name">Qwetu Wilson View</p>
-                <p id="type"><span>Bedsitter</span><span>150M</span> <span> Kitchen</span></p>
-                <P id="classification"><span>Posted by Qwetu</span><span id="sp">10K/Month</span></p>
+                <p id="name"><?php echo $property['name']; ?></p>
+                <p id="type"><span><?php echo $property['type']; ?></span><span><?php echo $property['size']; ?></span></p>
+                <P id="classification"><span>Posted by <?php echo $property['agent']; ?></span><span id="sp"><?php echo $property['price']; ?></span></p>
             </div>
         </div>
-        <div class="featured">
-            <a href="#"><img src="/Listings assets/Images/Mint ladies hostel.jpg" alt=""></a>
+        <?php } // Close the if ?>
+    <?php } // Close the loop ?>
+</div>
+
+<div class="line1">
+    <!-- Loop on available properties, creating a div for each -->
+    <?php foreach($properties as $property){ // Open a loop ?>
+        <?php if ($property['id'] < 3) { ?>
+        <div class="featured" onClick="location.href='single-properties.html'">
+            <a href="#"><img src="landing_assets/images/hostel4.jpg" alt="Hostel image 1" /></a>
             <div>
-                <p id="name">Mint Ladies hostel</p>
-                <p id="type"><span>2 bed Rooms</span><span>1KM</span> <span> Kitchen</span></p>
-                <P id="classification"><span>Posted by Mint</span><span id="sp">26K/Month</span></p>
+                <p id="name"><?php echo $property['name']; ?></p>
+                <p id="type"><span><?php echo $property['type']; ?></span><span><?php echo $property['size']; ?></span></p>
+                <P id="classification"><span>Posted by <?php echo $property['agent']; ?></span><span id="sp"><?php echo $property['price']; ?></span></p>
             </div>
         </div>
-    </div>
-    <div class="line1">
-        <div class="featured">
-            <a href="#"><img src="/Listings assets/Images/city stone.jpg" alt=""></a>
-            <div>
-                <p id="name">City Stone hostels</p>
-                <p id="type"><span>1 bedroom</span><span>150M</span> <span> Kitchen</span></p>
-                <P id="classification"><span>Posted by city stone</span><span id="sp">15K/Month</span></p>
-            </div>
-        </div>
-        <div class="featured">
-            <a href="#"><img src="/Listings assets/Images/Classic hoste.jpeg" alt=""></a>
-            <div>
-                <p id="name">Classics Hostels</p>
-                <p id="type"><span>Bedsitter</span><span>150M</span> <span> Kitchen</span></p>
-                <P id="classification"><span>Posted by Classics</span><span id="sp">8K/Month</span></p>
-            </div>
-        </div>
-    </div>
-    <div class="line1">
-        <div class="featured">
-            <a href="#"><img src="/Listings assets/Images/Eco hostels .jpg" alt=""></a>
-            <div>
-                <p id="name">Eco Hostels</p>
-                <p id="type"><span>Bedsitter</span><span>150M</span> <span> Kitchen</span></p>
-                <P id="classification"><span>Posted by Eco</span><span id="sp">12K/Month</span></p>
-            </div>
-        </div>
-        <div class="featured">
-            <a href="#"><img src="/Listings assets/Images/Global village ladies hostels.jpg" alt=""></a>
-            <div>
-                <p id="name">Global Village Hostels</p>
-                <p id="type"><span>Bedsitter</span><span>150M</span> <span> Kitchen</span></p>
-                <P id="classification"><span>Posted by Global</span><span id="sp">10K/Month</span></p>
-            </div>
-        </div>
-    </div>
+        <?php } // Close the if ?>
+    <?php } // Close the loop ?>
+</div>
     <h2>Shared Rooms</h2>
     <div class="line1">
         <div class="featured">
