@@ -3,6 +3,8 @@
 /* Slideshow container */
 .slideshow-container {
    position: relative;
+   padding-bottom: 15px;
+  border-bottom: 1px solid lightgrey;
 }
 
 .slideshow-container img {
