@@ -11,7 +11,7 @@ h1, h2, h3, h4 {
     font-family: "montserrat", sans-serif;
 }
 h1 { 
-    color: rgb(231, 59, 59);
+    color: #F85A47;
 }
 
 /* Nav */
@@ -39,7 +39,7 @@ button#login {
 }
 button#login:hover {
     color: black;
-    background-color: red;
+    background-color: #F85A47;
     border: 3px inset black;
     width: 8.1vw;
 }
@@ -73,6 +73,7 @@ div.flextwo {
 }
 .flextwo ul {
     width: 80%;
+    font-family: "abeezee", sans-serif;
 }
 .flextwo h4 {
     width: 15%;
@@ -117,7 +118,7 @@ div.pricing {
     color: #F85A47;
 }
 button.book {
-    background-color: rgb(240, 84, 84);
+    background-color: #F85A47;
     text-align: center;
     width: 24vw;
     padding: 2vh 0;
@@ -136,6 +137,6 @@ a.book {
     height: 12px;
 }
 span {
-    color: red;
+    color: #F85A47;
 }
 /* Div.booking end */
