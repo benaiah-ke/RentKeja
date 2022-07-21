@@ -104,59 +104,35 @@ while($row = $result->fetch_array()){
         <?php } // Close the if ?>
 
 <div class="line1">
-    <div class="featured" onClick="location.href='single-properties.html'">
-           <a href="#"><img src="landing_assets/images/hostel4.jpg" alt="Hostel image 1" /></a>
-           <div>
-            <p id="name">Mchana Apartments</p>
-            <p id="type"><span>Single</span><span>150M</span> <span> 1 Bathroom</span></p>
-            <P id="classification"><span>Posted by Mchana</span><span id="sp">10K/Month</span></p>
+    <!-- Loop on available properties, creating a div for each -->
+    <?php foreach($properties as $property){ // Open a loop ?>
+        <?php if ($property['id'] < 3) { ?>
+        <div class="featured" onClick="location.href='single-properties.html'">
+            <a href="#"><img src="landing_assets/images/hostel4.jpg" alt="Hostel image 1" /></a>
+            <div>
+                <p id="name"><?php echo $property['name']; ?></p>
+                <p id="type"><span><?php echo $property['type']; ?></span><span><?php echo $property['size']; ?></span></p>
+                <P id="classification"><span>Posted by <?php echo $property['agent']; ?></span><span id="sp"><?php echo $property['price']; ?></span></p>
+            </div>
         </div>
-    </div>
-    <div class="featured" onClick="location.href='single-properties.html'">
-        <a href="#"><img src="landing_assets/images/hostel5.jpg" alt=""></a>
-        <div>
-         <p id="name">Sunrise Hostels</p>
-         <p id="type"><span>Bedsitter</span><span>150M</span> <span> Kitchen</span></p>
-         <P id="classification"><span>Posted by Sunrise</span><span id="sp">10K/month</span></p>
-     </div>
- </div>
+        <?php } // Close the if ?>
+    <?php } // Close the loop ?>
 </div>
+
 <div class="line1">
-    <div class="featured" onClick="location.href='single-properties.html'">
-        <a href="#"><img src="landing_assets/images/hostel6.jpg" alt=""></a>
-           <div>
-            <p id="name">Sunset Apartments</p>
-            <p id="type"><span>1 Bedroom</span><span>150M</span> <span> Sharing</span></p>
-            <P id="classification"><span>Posted by Sunset</span><span id="sp">12K/Month</span></p>
+    <!-- Loop on available properties, creating a div for each -->
+    <?php foreach($properties as $property){ // Open a loop ?>
+        <?php if ($property['id'] < 5 && $property['id'] > 2) { ?>
+        <div class="featured" onClick="location.href='single-properties.html'">
+            <a href="#"><img src="landing_assets/images/hostel4.jpg" alt="Hostel image 1" /></a>
+            <div>
+                <p id="name"><?php echo $property['name']; ?></p>
+                <p id="type"><span>Single</span><span>150M</span> <span> 1 Bathroom</span></p>
+                <P id="classification"><span>Posted by Mchana</span><span id="sp">10K/Month</span></p>
+            </div>
         </div>
-    </div>
-    <div class="featured" onClick="location.href='single-properties.html'">
-        <a href="#"><img src="landing_assets/images/hostel4.jpg" alt=""></a>
-        <div>
-         <p id="name">Usiku Hostels</p>
-         <p id="type"><span>2 Bedroom</span><span>150M</span> <span> Garage</span></p>
-         <P id="classification"><span>Posted by Usiku</span><span id="sp">18K/Month</span></p>
-     </div>
- </div>
-</div>
-<div class="line1">
-    <div class="featured" onClick="location.href='single-properties.html'">
-        <a href="#"><img src="landing_assets/images/hostel5.jpg" alt=""></a>
-           <div>
-            <p id="name">Kesho Hostels</p>
-            <p id="type"><span>Bedsitter</span><span>150M</span> <span> Kitchen</span></p>
-            <P id="classification"><span>Posted by Kesho</span><span id="sp">12K/Month</span></p>
-        </div>
-    </div>
-    <div class="featured" onClick="location.href='single-properties.html'">
-        <a href="#"><img src="landing_assets/images/hostel6.jpg" alt=""></a>
-        <div>
-         <p id="name">Today Apartments</p>
-         <p id="type"><span>2 Bedroom</span><span>150M</span> <span> 2 Toilets</span></p>
-         <P id="classification"><span>Posted by Today</span><span id="sp">10K/Month</span></p>
-     </div>
-     <br><br><br><br>
- </div>
+        <?php } // Close the if ?>
+    <?php } // Close the loop ?>
 </div>
 
     <!-- Part2 Featured-Properties-->
