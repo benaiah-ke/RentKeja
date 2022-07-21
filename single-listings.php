@@ -1,3 +1,25 @@
+<?php
+
+$host = 'localhost';
+$user = 'root';
+$password = '';
+$db_name = 'real_estate';
+
+$conn = mysqli_connect($host, $user, $password, $db_name);
+
+// This was passed via the url
+$property_id = $_GET['property_id'];
+
+// Select a specific listing
+$query = "SELECT * FROM properties WHERE id = $property_id";
+
+$result = $conn->query($query);
+
+// We are expecting only a single result, so we do not loop here
+$property = $result->fetch_array();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
