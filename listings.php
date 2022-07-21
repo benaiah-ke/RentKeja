@@ -63,16 +63,21 @@ while($row = $result->fetch_array()){
                 <h1>No properties listed yet. Check-in later</h1>
             </div>
         <?php } // Close the if ?>
-        
+
     <div class="line1">
-        <div class="featured">
-            <a href="#"><img src="/Listings assets/Images/qwetu wilson view.jpg" alt=""></a>
+        <!-- Loop on available properties, creating a div for each -->
+    <?php foreach($properties as $property){ // Open a loop ?>
+        <?php if ($property['id'] < 3) { ?>
+        <div class="featured" onClick="location.href='single-properties.html'">
+            <a href="#"><img src="landing_assets/images/hostel4.jpg" alt="Hostel image 1" /></a>
             <div>
-                <p id="name">Qwetu Wilson View</p>
-                <p id="type"><span>Bedsitter</span><span>150M</span> <span> Kitchen</span></p>
-                <P id="classification"><span>Posted by Qwetu</span><span id="sp">10K/Month</span></p>
+                <p id="name"><?php echo $property['name']; ?></p>
+                <p id="type"><span><?php echo $property['type']; ?></span><span><?php echo $property['size']; ?></span></p>
+                <P id="classification"><span>Posted by <?php echo $property['agent']; ?></span><span id="sp"><?php echo $property['price']; ?></span></p>
             </div>
         </div>
+        <?php } // Close the if ?>
+    <?php } // Close the loop ?>
         <div class="featured">
             <a href="#"><img src="/Listings assets/Images/Mint ladies hostel.jpg" alt=""></a>
             <div>
