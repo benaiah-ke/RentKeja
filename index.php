@@ -50,9 +50,9 @@ while($row = $result->fetch_array()){
                 <div class="navl">
                     <ul>
                           <li><a href="#home">Home</a></li>
-                          <li><a href="listings.html">Listings</a></li>
+                          <li><a href="listings.php">Listings</a></li>
                           <li><a href="#contact">Contact Us</a></li>
-                          <button id="hbtn" class="btnnn"><a href="login.html">Login</a></button>
+                          <button id="hbtn" class="btnnn"><a href="plogin.html">Login</a></button>
                     </ul>
                 </div>
             </div>
@@ -90,7 +90,7 @@ while($row = $result->fetch_array()){
 <div class="featuretitle">
     <div class="tproduct"><h2>Featured Properties</h2></div>
     <div class="ncbtn">
-        <button class="ncbutton"><a href="listings.html">See All</a></button>
+        <button class="ncbutton"><a href="listings.php">See All</a></button>
     </div>
 </div>
 
@@ -252,7 +252,7 @@ while($row = $result->fetch_array()){
     <div class="navll">
         <ul>
               <li><a href="#home">Home</a></li>
-              <li><a href="#listings">Listings</a></li>
+              <li><a href="listings.php">Listings</a></li>
               <li><a href="signup.html">Sign Up</a></li>
               <li><a href="#contact">Contact Us</a></li>
           </ul>

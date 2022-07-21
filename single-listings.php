@@ -42,11 +42,11 @@ $property = $result->fetch_array();
     <nav>
         <h2>RentKeja</h2>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="listings.html">Listings</a></li>
-            <li><a href="index.html#contact">Contact Us</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="listings.php">Listings</a></li>
+            <li><a href="index.php#contact">Contact Us</a></li>
         </ul>
-        <button id="login">Login</button>
+        <button id="login" href="plogin.php">Login</button>
     </nav>
     <div id="everything">        
         <div class="property-left">

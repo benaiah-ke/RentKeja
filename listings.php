@@ -44,10 +44,10 @@ while($row = $result->fetch_array()){
             </div>
             <div class="navl">
                 <ul>
-                    <li><a href="index.htm">Home</a></li>
-                    <li><a href="listings.html">Listings</a></li>
-                    <li><a href="index.html#contact">About Us</a></li>
-                    <button id="hbtn" class="btnnn"><a href="#sales">Login</a></button>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="listings.php">Listings</a></li>
+                    <li><a href="index.php#contact">About Us</a></li>
+                    <button id="hbtn" class="btnnn"><a href="plogin.php">Login</a></button>
                 </ul>
             </div>
         </div>
