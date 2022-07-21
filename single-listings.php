@@ -50,60 +50,34 @@ $property = $result->fetch_array();
     </nav>
     <div id="everything">        
         <div class="property-left">
-            <h1>Qwetu Wilson View</h1><br>
+            <h1><?php echo $property['name']; ?></h1><br>
             <div class="slideshow-container">
         
                 <div class="mySlides fade">
-                  <div class="numbertext">1 of 8</div>
-                  <img src="single-listings-assets/img/1.jpg">
-                  <p>Main Building</p>
+                  <div class="numbertext">1 of 4</div>
+                  <img src="<?php echo $property['image']; ?>">
+                  <p>Property Image</p>
                 </div>
               
                 <div class="mySlides fade">
-                  <div class="numbertext">2 of 8</div>
-                  <img src="single-listings-assets/img/2.jpg">
-                  <p>Main Building</p>
+                  <div class="numbertext">2 of 4</div>
+                  <img src="<?php echo $property['image2']; ?>">
+                  <p>Property Image</p>
 
                 </div>
               
                 <div class="mySlides fade">
-                  <div class="numbertext">3 of 8</div>
-                  <img src="single-listings-assets/img/3.jpg">
-                    <p>Main Building</p>
+                  <div class="numbertext">3 of 4</div>
+                  <img src="<?php echo $property['image3']; ?>">
+                    <p>Property Image</p>
 
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">4 of 8</div>
-                    <img src="single-listings-assets/img/4.jpg">
-                    <p>Main Building</p>
+                    <div class="numbertext">4 of 4</div>
+                    <img src="<?php echo $property['image4']; ?>">
+                    <p>Property Image</p>
 
-                  </div>
-
-                  <div class="mySlides fade">
-                    <div class="numbertext">5 of 8</div>
-                    <img src="single-listings-assets/img/5.jpg">
-                    <p>Single Rooms</p>
-
-                  </div>
-
-                  <div class="mySlides fade">
-                    <div class="numbertext">6 of 8</div>
-                    <img src="single-listings-assets/img/6.jpg">
-                    <p>Single Rooms</p>
-
-                  </div>
-
-                  <div class="mySlides fade">
-                    <div class="numbertext">7 of 8</div>
-                    <img src="single-listings-assets/img/7.jpg">
-                    <p>Sharing Rooms</p>
-                  </div>
-
-                  <div class="mySlides fade">
-                    <div class="numbertext">8 of 8</div>
-                    <img src="/single-listings-assets/img/supermarket.webp">
-                    <p>Minimart</p>
                   </div>
               
                 <!-- Next and previous buttons -->
@@ -116,21 +90,12 @@ $property = $result->fetch_array();
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                     <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                    <span class="dot" onclick="currentSlide(6)"></span>
-                    <span class="dot" onclick="currentSlide(7)"></span>
-                    <span class="dot" onclick="currentSlide(8)"></span>
 
                 </div>
             </div>
             <h3>About Our Hostels</h3>
             <p class="border-bottom">
-                Qwetu WilsonView are safe & secure affordable student
-                hostels in Madaraka. Accommodation offering furnished
-                rooms to select from with Beds, Free Wifi, 24/7 Security,
-                Constant Water Supply. Home to students from UON, Riara
-                University, Strathmore University Daystar University,
-                CUEA, and ADMI.
+            <?php echo $property['about']; ?>
             </p>
             <div class="flextwo">
                 <h4>Amenities</h4>
