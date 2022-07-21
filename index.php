@@ -96,11 +96,9 @@ while($row = $result->fetch_array()){
 
 <!-- Check if there are no results -->
 <?php if(count($properties) == 0){ ?>
-            <tr>
-                <td colspan="4">
-                    No properties!
-                </td>
-            </tr>
+            <div class="no-prop">
+                <h1>No properties listed yet. Check-in later</h1>
+            </div>
         <?php } // Close the if ?>
 
 <div class="line1">
@@ -122,13 +120,13 @@ while($row = $result->fetch_array()){
 <div class="line1">
     <!-- Loop on available properties, creating a div for each -->
     <?php foreach($properties as $property){ // Open a loop ?>
-        <?php if ($property['id'] < 5 && $property['id'] > 2) { ?>
+        <?php if ($property['id'] < 3) { ?>
         <div class="featured" onClick="location.href='single-properties.html'">
             <a href="#"><img src="landing_assets/images/hostel4.jpg" alt="Hostel image 1" /></a>
             <div>
                 <p id="name"><?php echo $property['name']; ?></p>
-                <p id="type"><span>Single</span><span>150M</span> <span> 1 Bathroom</span></p>
-                <P id="classification"><span>Posted by Mchana</span><span id="sp">10K/Month</span></p>
+                <p id="type"><span><?php echo $property['type']; ?></span><span><?php echo $property['size']; ?></span></p>
+                <P id="classification"><span>Posted by <?php echo $property['agent']; ?></span><span id="sp"><?php echo $property['price']; ?></span></p>
             </div>
         </div>
         <?php } // Close the if ?>
