@@ -113,6 +113,8 @@ div.pricing {
     padding-top: 3px;
     border-bottom: 1px solid rgb(213, 210, 210);
     text-align: center;
+    font-family: "inter", sans-serif;
+    color: #F85A47;
 }
 button.book {
     background-color: rgb(240, 84, 84);
