@@ -1,3 +1,27 @@
+<?php
+
+$host = 'localhost';
+$user = 'root';
+$password = '';
+$db_name = 'real_estate';
+
+$conn = mysqli_connect($host, $user, $password, $db_name);
+
+// Select all listings
+$query = "SELECT * FROM properties";
+
+$result = $conn->query($query);
+
+// We'll store the results here
+$properties = [];
+
+// Results are multiple rows, so we use a loop
+while($row = $result->fetch_array()){
+    array_push($properties, $row); // Add the row to the array
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -69,6 +93,16 @@
         <button class="ncbutton"><a href="listings.html">See All</a></button>
     </div>
 </div>
+
+<!-- Check if there are no results -->
+<?php if(count($properties) == 0){ ?>
+            <tr>
+                <td colspan="4">
+                    No properties!
+                </td>
+            </tr>
+        <?php } // Close the if ?>
+
 <div class="line1">
     <div class="featured" onClick="location.href='single-properties.html'">
            <a href="#"><img src="landing_assets/images/hostel4.jpg" alt="Hostel image 1" /></a>
