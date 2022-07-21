@@ -1,3 +1,27 @@
+<?php
+
+$host = 'localhost';
+$user = 'root';
+$password = '';
+$db_name = 'real_estate';
+
+$conn = mysqli_connect($host, $user, $password, $db_name);
+
+// Select all listings
+$query = "SELECT * FROM properties";
+
+$result = $conn->query($query);
+
+// We'll store the results here
+$properties = [];
+
+// Results are multiple rows, so we use a loop
+while($row = $result->fetch_array()){
+    array_push($properties, $row); // Add the row to the array
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,6 +56,14 @@
     </header>
     <h1>Featured hostels</h1>
     <h2>Browse July's list of featured hostels</h2>
+
+    <!-- Check if there are no results -->
+<?php if(count($properties) == 0){ ?>
+            <div class="no-prop">
+                <h1>No properties listed yet. Check-in later</h1>
+            </div>
+        <?php } // Close the if ?>
+        
     <div class="line1">
         <div class="featured">
             <a href="#"><img src="/Listings assets/Images/qwetu wilson view.jpg" alt=""></a>
