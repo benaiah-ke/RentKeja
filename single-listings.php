@@ -133,26 +133,12 @@ $property = $result->fetch_array();
                     verified
                 </p>
             </div>
-            <p> <strong>Hostel</strong>: Qwetu Wilson View</p>
-            <p> <strong>Gender</strong>: ALL</p>
-            <p> <strong>Agent/Landlord:</strong>: Qwetu Wilson View
-            Hostel</p>
+            <p> <strong>Hostel</strong>:<?php echo $property['name']; ?></p>
+            <p> <strong>Gender</strong>: <?php echo $property['gender']; ?></p>
+            <p> <strong>Agent/Landlord:</strong>: <?php echo $property['agent']; ?></p>
             <div class="pricing">
-                <span class="roomtype"> Single Rooms</span>
-                <p> <b>Monthly</b> At <b>Kshs.26000</b> Paid Once 
-                    Per Head
-                </p>
-            </div>
-            <div class="pricing">
-                <span class="roomtype"> Single Rooms</span>
-                <p> <b>Monthly</b> At <b>Kshs.23500</b> Paid Once 
-                    Per Head
-                </p>
-            </div>
-            <div class="pricing">
-                <span class="roomtype"> 2 Sharing Rooms</span>
-                <p> <b>Monthly</b> At <b>Kshs.12500</b> Paid Once 
-                    Per Head
+                <span class="roomtype"> <?php echo $property['type']; ?></span>
+                <p> <b>Monthly</b> At <b><?php echo $property['price']; ?></b>
                 </p>
             </div>
             <button class="book">
