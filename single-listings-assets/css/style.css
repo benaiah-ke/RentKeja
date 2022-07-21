@@ -10,6 +10,9 @@ p {
 h1, h2, h3, h4 {
     font-family: "montserrat", sans-serif;
 }
+h1 { 
+    color: #F85A47;
+}
 
 /* Nav */
 nav {
@@ -36,7 +39,7 @@ button#login {
 }
 button#login:hover {
     color: black;
-    background-color: red;
+    background-color: #F85A47;
     border: 3px inset black;
     width: 8.1vw;
 }
@@ -49,7 +52,7 @@ nav a:hover {
 }
 /* Nav end */
 
-h1 { color: rgb(231, 59, 59);}
+/* Div#everything */
 
 #everything {
     display: flex;
@@ -59,6 +62,36 @@ h1 { color: rgb(231, 59, 59);}
     width: 60%;
     border-bottom: 1px solid lightgray;
 }
+
+div.flextwo {
+    display: flex;
+    justify-content: space-evenly;
+}
+.flextwo li {
+    list-style: circle;
+    line-height: 40px;
+}
+.flextwo ul {
+    width: 80%;
+    font-family: "abeezee", sans-serif;
+}
+.flextwo h4 {
+    width: 15%;
+}
+p.border-bottom {
+  border-bottom: 1px solid rgb(213, 210, 210);
+  padding-bottom: 20px;
+}
+/* Div.everything end */
+
+/* Div.booking start */
+
+.verified {
+    color: green;
+    position: absolute;
+    right: 16vw;
+    top: 27vh;
+}
 .booking {
     width: 30%;
     border: 1px solid lightgray;
@@ -67,17 +100,6 @@ h1 { color: rgb(231, 59, 59);}
     height: 120vh;
     line-height: 30px;
 }
-.slideshow-container {
-    padding-bottom: 15px;
-    border-bottom: 1px solid lightgrey;
-}
-.verified {
-    color: green;
-    position: absolute;
-    right: 16vw;
-    top: 27vh;
-}
-
 div.pricing {
     border: 1px solid lightgrey;
     border-radius: 5px;
@@ -92,9 +114,11 @@ div.pricing {
     padding-top: 3px;
     border-bottom: 1px solid rgb(213, 210, 210);
     text-align: center;
+    font-family: "inter", sans-serif;
+    color: #F85A47;
 }
 button.book {
-    background-color: rgb(240, 84, 84);
+    background-color: #F85A47;
     text-align: center;
     width: 24vw;
     padding: 2vh 0;
@@ -112,24 +136,7 @@ a.book {
     width: 10px;
     height: 12px;
 }
-div.flextwo {
-    display: flex;
-    justify-content: space-evenly;
-}
-.flextwo li {
-    list-style: circle;
-    line-height: 40px;
-}
-.flextwo ul {
-    width: 80%;
-}
-.flextwo h4 {
-    width: 15%;
-}
 span {
-    color: red;
+    color: #F85A47;
 }
-p.border-bottom {
-  border-bottom: 1px solid rgb(213, 210, 210);
-  padding-bottom: 20px;
-}
+/* Div.booking end */
