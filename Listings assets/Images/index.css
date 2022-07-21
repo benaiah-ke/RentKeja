@@ -1,7 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+html,body {
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+	min-height: 100%;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+	}
 .navbar {
 	background-color: #FAFAFA;
 	width: 100%;
@@ -16,6 +20,7 @@
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
+    height: 8vh;
 
 }
 .navl{
@@ -91,6 +96,7 @@ img{
 }
 #name{
     padding-left: 90px;
+    text-decoration: none;
 }
 span{
     margin: 30px;
@@ -134,4 +140,7 @@ button{
     width: 200px;
     background-color: #F85A47;
     color: white;
+}
+@media only screen and (min-width: 900px){
+
 }
