@@ -46,7 +46,7 @@ $property = $result->fetch_array();
             <li><a href="listings.php">Listings</a></li>
             <li><a href="index.php#contact">Contact Us</a></li>
         </ul>
-        <button id="login" href="plogin.php">Login</button>
+        <button id="login" href="plogin.html">Login</button>
     </nav>
     <div id="everything">        
         <div class="property-left">

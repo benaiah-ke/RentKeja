@@ -47,7 +47,7 @@ while($row = $result->fetch_array()){
                     <li><a href="index.php">Home</a></li>
                     <li><a href="listings.php">Listings</a></li>
                     <li><a href="index.php#contact">About Us</a></li>
-                    <button id="hbtn" class="btnnn"><a href="plogin.php">Login</a></button>
+                    <button id="hbtn" class="btnnn"><a href="plogin.html">Login</a></button>
                 </ul>
             </div>
         </div>
