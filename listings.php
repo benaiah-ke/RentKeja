@@ -66,7 +66,7 @@ while($row = $result->fetch_array()){
         <!-- Loop on available properties, creating a div for each -->
     <?php foreach($properties as $property){ // Open a loop ?>
         <?php if ($property['id'] < 3) { ?>
-        <div class="featured" onClick="location.href='single-properties.html'">
+        <div class="featured" onClick="location.href='single-properties.php?property_id=<?php echo $property['id']; ?>'">
             <a href="#"><img src="<?php echo $property['image']; ?>" alt="Hostel image 1" /></a>
             <div>
                 <p id="name"><?php echo $property['name']; ?></p>
@@ -81,7 +81,7 @@ while($row = $result->fetch_array()){
     <!-- Loop on available properties, creating a div for each -->
     <?php foreach($properties as $property){ // Open a loop ?>
         <?php if ($property['id'] < 3) { ?>
-        <div class="featured" onClick="location.href='single-properties.html'">
+        <div class="featured" onClick="location.href='single-properties.php?property_id=<?php echo $property['id']; ?>'">
             <a href="#"><img src="<?php echo $property['image']; ?>" alt="Hostel image 1" /></a>
             <div>
                 <p id="name"><?php echo $property['name']; ?></p>
@@ -105,7 +105,7 @@ while($row = $result->fetch_array()){
         <!-- Loop on available properties, creating a div for each -->
     <?php foreach($properties as $property){ // Open a loop ?>
         <?php if ($property['id'] < 3) { ?>
-        <div class="featured" onClick="location.href='single-properties.html'">
+        <div class="featured" onClick="location.href='single-properties.php?property_id=<?php echo $property['id']; ?>'">
             <a href="#"><img src="<?php echo $property['image']; ?>" alt="Hostel image 1" /></a>
             <div>
                 <p id="name"><?php echo $property['name']; ?></p>
@@ -120,7 +120,7 @@ while($row = $result->fetch_array()){
     <!-- Loop on available properties, creating a div for each -->
     <?php foreach($properties as $property){ // Open a loop ?>
         <?php if ($property['id'] < 3) { ?>
-        <div class="featured" onClick="location.href='single-properties.html'">
+        <div class="featured" onClick="location.href='single-properties.php?property_id=<?php echo $property['id']; ?>'">
             <a href="#"><img src="<?php echo $property['image']; ?>" alt="Hostel image 1" /></a>
             <div>
                 <p id="name"><?php echo $property['name']; ?></p>
@@ -144,7 +144,7 @@ while($row = $result->fetch_array()){
         <!-- Loop on available properties, creating a div for each -->
     <?php foreach($properties as $property){ // Open a loop ?>
         <?php if ($property['id'] < 3) { ?>
-        <div class="featured" onClick="location.href='single-properties.html'">
+        <div class="featured" onClick="location.href='single-properties.php?property_id=<?php echo $property['id']; ?>'">
             <a href="#"><img src="<?php echo $property['image']; ?>" alt="Hostel image 1" /></a>
             <div>
                 <p id="name"><?php echo $property['name']; ?></p>
@@ -159,7 +159,7 @@ while($row = $result->fetch_array()){
     <!-- Loop on available properties, creating a div for each -->
     <?php foreach($properties as $property){ // Open a loop ?>
         <?php if ($property['id'] < 3) { ?>
-        <div class="featured" onClick="location.href='single-properties.html'">
+        <div class="featured" onClick="location.href='single-properties.php?property_id=<?php echo $property['id']; ?>'">
             <a href="#"><img src="<?php echo $property['image']; ?>" alt="Hostel image 1" /></a>
             <div>
                 <p id="name"><?php echo $property['name']; ?></p>
