@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+html,body {
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+	min-height: 100%;;
+	}
+.navbar {
+	background-color: #FAFAFA;
+	width: 100%;
+	border-bottom: 1px solid grey;
+	position: relative;
+
+}
+.navb {
+	padding: 15px;
+	align-items: center;
+	/* width: 80%; */
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+    height: 8vh;
+
+}
+.navl{
+    display: flex;
+    text-decoration: none;
+}
+.navl > ul {
+	display: flex !important;
+	align-items: center;
+}
+.navl > ul > li > a {
+	list-style: none;
+	font-size: 17px;
+	/* padding: 15px; */
+	margin-right: 80px;
+	text-decoration: none;
+	color: black;
+	justify-content:space-between;
+	/* margin-left: -120px; */
+
+}
+.navl > ul > li {
+	list-style: none;
+}
+.navl > ul > li > a:hover {
+	color: #0F298B;
+	font-weight: 600;
+}
+.navl ul > li > .visited-link:visited {
+	color: #0F298B;
+	font-weight: 700;
+}
+.logo > h1 {
+	font-family: "Oleo Script", cursive;
+	margin-right: -1020px;
+	margin-left: 40px;
+}
+body{
+    background-color: #F5F5F5;
+    height: 100vh;
+    width: 100vw;
+}
+.featured{
+  display: flex;  
+  border: solid 1px #1DAEFF;
+  flex-direction: row;
+  width: 585px;
+  height: 249px;
+  background-color: white;
+  border-radius: 30px;
+  font-family: 'abeezee',sans-serif;
+}
+h1,h2{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    color: #110229;
+    font-size: 38px;
+    line-height: 46.32px;
+    padding: 30px;
+}
+img{
+    height: 191px;
+    width: 158px;
+    border-radius: 30px;
+    padding: 10px;
+}
+.line1{
+    padding: 30px;
+}
+.featured div{
+    justify-content: center;
+    padding-top: 30px;
+}
+#name{
+    padding-left: 90px;
+    text-decoration: none;
+}
+span{
+    margin: 30px;
+    color: #8F90A6;
+}
+#sp{
+    background-color:#8F90A6;
+    border-radius: 10px;
+    color: white;
+    padding: 8px;
+}
+p{
+    padding: 15px;
+}
+.line1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#footer{
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+}
+.footer{
+    text-align: center;
+    padding-bottom: 200px;
+    font-size: 22px;
+    margin: 40px;
+}
+.footer h2{
+    text-align: center;
+    padding: 50px;
+}
+input{
+    height: 40px;
+    width: 400px;
+}
+button{
+    height: 40px;
+    width: 200px;
+    background-color: #F85A47;
+    color: white;
+}
+
+.no-prop {
+	border-style: solid;
+	border-width: 2px;
+	padding: 50px;
+	text-align: center;
+	margin: 50px;
+	border-radius: 20px;
+	border-color: red;
+}
+
+.no-prop h1 {
+	font-family: 'AbeeZee', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}

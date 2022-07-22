@@ -1,21 +1,41 @@
+<?php
+
+$host = 'localhost';
+$user = 'root';
+$password = '';
+$db_name = 'real_estate';
+
+$conn = mysqli_connect($host, $user, $password, $db_name);
+
+// Select all listings
+$query = "SELECT * FROM properties";
+
+$result = $conn->query($query);
+
+// We'll store the results here
+$properties = [];
+
+// Results are multiple rows, so we use a loop
+while($row = $result->fetch_array()){
+    array_push($properties, $row); // Add the row to the array
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
 
  <!--font-awesome-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-
- <!--poppins font-->
- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400&display=swap"/>
+<!--google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="landing_assets/styles.css"/>
- <!--inter and poppins font-->
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Poppins&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Material Symbols and icons -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols" rel="stylesheet">
+        <link rel="stylesheet" href="landing_assets/styles.css"/>
 
 <!--navigation part-->
 
@@ -30,9 +50,9 @@
                 <div class="navl">
                     <ul>
                           <li><a href="#home">Home</a></li>
-                          <li><a href="#about">Listings</a></li>
-                          <li><a href="#contact">About Us</a></li>
-                          <button id="hbtn" class="btnnn"><a href="#sales">Login</a></button>
+                          <li><a href="listings.php">Listings</a></li>
+                          <li><a href="#contact">Contact Us</a></li>
+                          <button id="hbtn" class="btnnn"><a href="plogin.html">Login</a></button>
                     </ul>
                 </div>
             </div>
@@ -45,7 +65,7 @@
 <br>
 
 <!-- Part1 //home section-->
-    <div class="hbody">
+    <div class="hbody" id="home">
         <div class="hbody1">
             <div class="htext">
                 <div class="htext1">
@@ -67,97 +87,53 @@
 
 <!-- Part2 Featured-Properties-->
 
-<div class="feature">
-    <!-- opproduct-->
-    <div class="featuretitle">
-        <div class="tproduct"><h2>Featured Properties</h2></div>
-        <div class="ncbtn">
-            <button class="ncbutton">See All</button>
-        </div>
+<div class="featuretitle">
+    <div class="tproduct"><h2>Featured Properties</h2></div>
+    <div class="ncbtn">
+        <button class="ncbutton"><a href="listings.php">See All</a></button>
     </div>
-    <div class="dffeature">
+</div>
 
-       <div class="c1">
-        <div class="cllient">
-            <div class="image2p">
-                <img src="landing_assets/images/hostel1.png" alt="Hostel image 1" />
+<!-- Check if there are no results -->
+<?php if(count($properties) == 0){ ?>
+            <div class="no-prop">
+                <h1>No properties listed yet. Check-in later</h1>
             </div>
-        <div>
-            <h3>Mchana Apartments</h3>
-            <p class="ncountry">Single <br> 150M <br> 1 Bathroom</p>
-            <p class="mmessage">Posted by Mchana<button id="btn">10K/month</button>
-            </p>
-        </div>
-        </div>
-        <div class="cllient">
-            <div class="image2p">
-                <img src="landing_assets/images/hostel2.png" alt="Hostel image 2" />
+        <?php } // Close the if ?>
+
+        <div class="line1">
+        <!-- Loop on available properties, creating a div for each -->
+    <?php foreach($properties as $property){ // Open a loop ?>
+        <?php if ($property['id'] < 3) { ?>
+        <div class="featured" onClick="location.href='single-listings.php?property_id=<?php echo $property['id']; ?>'">
+            <a href="#"><img src="<?php echo $property['image']; ?>" alt="Hostel image 1" /></a>
+            <div>
+                <p id="name"><?php echo $property['name']; ?></p>
+                <p id="type"><span><?php echo $property['type']; ?></span><span><?php echo $property['size']; ?></span></p>
+                <P id="classification"><span>Posted by <?php echo $property['agent']; ?></span><span id="sp"><?php echo $property['price']; ?></span></p>
             </div>
-        <div>
-            <h3>Sunrise Hostels</h3>
-            <p class="ncountry"> Bedsitter <br> 150M <br> 1 Kitchen</p>
-            <p class="mmessage"> Posted by Sunrise <button id="btn">10K/month</button>
-            </p>
         </div>
-        </div>
-
+        <?php } // Close the if ?>
+    <?php } // Close the loop ?>
     </div>
-    <br>
-    <div class="c1">
-        <div class="cllient">
-            <div class="image2p">
-                <img src="landing_assets/images/hostel3.png" alt="Hostel image 3" />
+    <div class="line1">
+    <!-- Loop on available properties, creating a div for each -->
+    <?php foreach($properties as $property){ // Open a loop ?>
+        <?php if ($property['id'] < 5 && $property['id'] > 2) { ?>
+        <div class="featured" onClick="location.href='single-listings.php?property_id=<?php echo $property['id']; ?>'">
+            <a href="#"><img src="<?php echo $property['image']; ?>" alt="Hostel image 1" /></a>
+            <div>
+                <p id="name"><?php echo $property['name']; ?></p>
+                <p id="type"><span><?php echo $property['type']; ?></span><span><?php echo $property['size']; ?></span></p>
+                <P id="classification"><span>Posted by <?php echo $property['agent']; ?></span><span id="sp"><?php echo $property['price']; ?></span></p>
             </div>
-        <div>
-            <h3>Sunset Apartments</h3>
-            <p class="ncountry">Shared Room<br> 150M <br> 5 Sharing</p>
-            <p class="mmessage">Posted by Sunset<button id="btn">12K/month</button></p>
         </div>
+        <?php } // Close the if ?>
+    <?php } // Close the loop ?>
     </div>
-
-        <div class="cllient">
-            <div class="image2">
-                <img src="landing_assets/images/hostel4.jpg" alt="Hostel image 4" />
-            </div>
-        <div>
-            <h3>Usiku Hostels</h3>
-            <p class="ncountry">2 Bedroom <br> 150M <br> 1 Garage</p>
-            <p class="mmessage">Posted by Usiku<button id="btn">14K/month</button></p>
-        </div>
-    </div>
-    </div>
-    <br>
-
-    <div class="c1">
-        <div class="cllient">
-            <div class="image2">
-                <img src="landing_assets/images/hostel5.jpg" alt="Hostel image 5" />
-            </div>
-        <div>
-            <h3>Kesho Hostels</h3>
-            <p class="ncountry">Single room <br> 150M <br> 1 Bathroom</p>
-            <p class="mmessage">Posted by Kesho<button id="btn">15K/month</button></p>
-        </div>
-    </div>
-
-        <div class="cllient">
-            <div class="image2">
-                <img src="landing_assets/images/hostel6.jpg" alt="Hostel image 6" />
-            </div>
-        <div>
-            <h3>Today Apartments</h3>
-            <p class="ncountry">2 Bedroom <br> 150M <br> 2 Toilets</p>
-            <p class="mmessage">Posted by Today<button id="btn">15K/month</button></p>
-        </div>
-    </div>
-    </div>
-
-    </div>
-    </div>
-    </div>
-
 
     <!-- Part2 Featured-Properties-->
+
 
 <!-- Part3 // what clients say-->
 <div class="feature">
@@ -165,6 +141,7 @@
   <!--  <hr class="thickhr">-->
     <br><br>
     <div class="featuretitle opproduct">
+        <br><br>
         <div class="tproduct client4"><h2>What Clients Says</h2></div>
     </div>
     <div class="dfeature">
@@ -253,7 +230,7 @@
 
 <!-- Part4 //footer-->
 
-<div class="containers">
+<div class="containers" id="contact">
     <div class="fcontainer">
     <h2 class="top">Get Our Newsletter</h2>
     <p>To join the worldwide community</p>
@@ -274,8 +251,8 @@
     <div class="navll">
         <ul>
               <li><a href="#home">Home</a></li>
-              <li><a href="#listings">Listings</a></li>
-              <li><a href="#about">About Us</a></li>
+              <li><a href="listings.php">Listings</a></li>
+              <li><a href="signup.html">Sign Up</a></li>
               <li><a href="#contact">Contact Us</a></li>
           </ul>
     </div>
