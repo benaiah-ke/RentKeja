@@ -1,9 +1,9 @@
 <?php
 //create server and database connection constants
 $host = "localhost";
-$user = "root";
-$pwd = "";
-$db = "rentkeja";
+$user = 'easyhous_root';
+$password = 'Tkbenaiah@1';
+$db_name = 'easyhous_real_estate';
 
 $con= new mysqli ($host, $user, $pwd, $db);
 
