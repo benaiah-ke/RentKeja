@@ -15,11 +15,11 @@ This project will enable users check for available accommodation areas and book 
 *Open the Terminal command line: [CTRL+ALT+T]<br>
 *Clone the repository: [git clone https://github.com/benaiah-ke/RentKeja.git]<br>
 *Change Directory: [cd RentKeja]<br>
-*Open index.html file on your browser
+*Open index.php file on your browser
 # Live Page
-https://trnm7.github.io/Milkit_Project3/
+This system requires a database running on the background
 # Contact Informantion
-Incase of any enquiries or contributions, be sure to email me at [rentkeja@gmail.com]
+Incase of any enquiries or contributions, be sure to email me at [noela.murugu@student.moringaschool.com]
 # License
 MIT Licence<br>
 Copyright (c) 2022 RentKeja<br>
