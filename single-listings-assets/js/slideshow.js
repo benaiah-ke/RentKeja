@@ -27,6 +27,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-let book = function () {
-  alert ("Your booking has been confirmed")
-}
