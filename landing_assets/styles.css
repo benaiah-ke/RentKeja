@@ -112,8 +112,8 @@ body {
 	justify-content: space-between;
 
 }
-.logoo > h1 {
-	font-family: "Oleo Script", cursive;
+.logo > h1 {
+	font-family: 'Inter', sans-serif;
 	margin-right: -1020px;
 	margin-left: 40px;
 	margin-top: 50px;

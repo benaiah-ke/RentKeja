@@ -26,10 +26,10 @@ $property = $result->fetch_array();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qwetu Wilson View</title>
-    <link rel="icon" href="/single-listings-assets/img/title icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="/single-listings-assets/css/slideshow.css">
-    <link rel="stylesheet" href="/single-listings-assets/css/style.css">
+    <title>Singe Listing</title>
+    <link rel="icon" href="single-listings-assets/img/title icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="single-listings-assets/css/slideshow.css">
+    <link rel="stylesheet" href="single-listings-assets/css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,27 +53,27 @@ $property = $result->fetch_array();
             <h1><?php echo $property['name']; ?></h1><br>
             <div class="slideshow-container">
         
-                <div class="mySlides fade">
+                <div class="mySlides">
                   <div class="numbertext">1 of 4</div>
                   <img src="<?php echo $property['image']; ?>">
                   <p>Property Image</p>
                 </div>
               
-                <div class="mySlides fade">
+                <div class="mySlides">
                   <div class="numbertext">2 of 4</div>
                   <img src="<?php echo $property['image2']; ?>">
                   <p>Property Image</p>
 
                 </div>
               
-                <div class="mySlides fade">
+                <div class="mySlides">
                   <div class="numbertext">3 of 4</div>
                   <img src="<?php echo $property['image3']; ?>">
                     <p>Property Image</p>
 
                 </div>
 
-                <div class="mySlides fade">
+                <div class="mySlides">
                     <div class="numbertext">4 of 4</div>
                     <img src="<?php echo $property['image4']; ?>">
                     <p>Property Image</p>
@@ -141,13 +141,13 @@ $property = $result->fetch_array();
                 <p> <b>Monthly</b> At <b><?php echo $property['price']; ?></b>
                 </p>
             </div>
-            <button class="book">
+            <button class="book" onClick="book()">
                 <img class="bookmark" src="/single-listings-assets/img/bookmark.png">
-                <a class="book" href="#">Book</a>
+                <a class="book">Book</a>
             </button>
         </div>
     </div>
     
-    <script src="/single-listings-assets/js/slideshow.js" type="text/javascript"></script>
+    <script src="single-listings-assets/js/slideshow.js" type="text/javascript"></script>
 </body>
 </html>

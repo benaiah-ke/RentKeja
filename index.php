@@ -101,12 +101,12 @@ while($row = $result->fetch_array()){
             </div>
         <?php } // Close the if ?>
 
-<div class="line1">
-    <!-- Loop on available properties, creating a div for each -->
+        <div class="line1">
+        <!-- Loop on available properties, creating a div for each -->
     <?php foreach($properties as $property){ // Open a loop ?>
         <?php if ($property['id'] < 3) { ?>
-        <div class="featured" onClick="location.href='single-properties.php?property_id=<?php echo $property['id']; ?>'">
-            <a href="#"><img src="landing_assets/images/hostel4.jpg" alt="Hostel image 1" /></a>
+        <div class="featured" onClick="location.href='single-listings.php?property_id=<?php echo $property['id']; ?>'">
+            <a href="#"><img src="<?php echo $property['image']; ?>" alt="Hostel image 1" /></a>
             <div>
                 <p id="name"><?php echo $property['name']; ?></p>
                 <p id="type"><span><?php echo $property['type']; ?></span><span><?php echo $property['size']; ?></span></p>
@@ -115,14 +115,13 @@ while($row = $result->fetch_array()){
         </div>
         <?php } // Close the if ?>
     <?php } // Close the loop ?>
-</div>
-
-<div class="line1">
+    </div>
+    <div class="line1">
     <!-- Loop on available properties, creating a div for each -->
     <?php foreach($properties as $property){ // Open a loop ?>
-        <?php if ($property['id'] < 3) { ?>
-        <div class="featured" onClick="location.href='single-properties.php?property_id=<?php echo $property['id']; ?>'">
-            <a href="#"><img src="landing_assets/images/hostel4.jpg" alt="Hostel image 1" /></a>
+        <?php if ($property['id'] < 5 && $property['id'] > 2) { ?>
+        <div class="featured" onClick="location.href='single-listings.php?property_id=<?php echo $property['id']; ?>'">
+            <a href="#"><img src="<?php echo $property['image']; ?>" alt="Hostel image 1" /></a>
             <div>
                 <p id="name"><?php echo $property['name']; ?></p>
                 <p id="type"><span><?php echo $property['type']; ?></span><span><?php echo $property['size']; ?></span></p>
@@ -131,7 +130,7 @@ while($row = $result->fetch_array()){
         </div>
         <?php } // Close the if ?>
     <?php } // Close the loop ?>
-</div>
+    </div>
 
     <!-- Part2 Featured-Properties-->
 
