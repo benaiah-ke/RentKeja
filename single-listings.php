@@ -1,9 +1,9 @@
 <?php
 
 $host = 'localhost';
-$user = 'easyhous_root';
-$password = 'Tkbenaiah@1';
-$db_name = 'easyhous_real_estate';
+$user = 'root';
+$password = '';
+$db_name = 'real_estate';
 
 $conn = mysqli_connect($host, $user, $password, $db_name);
 
@@ -141,10 +141,15 @@ $property = $result->fetch_array();
                 <p> <b>Monthly</b> At <b><?php echo $property['price']; ?></b>
                 </p>
             </div>
-            <button class="book" onClick="book()">
+            <button class="book" onclick="book()">
                 <img class="bookmark" src="/single-listings-assets/img/bookmark.png">
                 <a class="book">Book</a>
             </button>
+            <script>
+function book() {
+  alert("Your booking has been confirmed! You will be contacted soon.");
+}
+</script>
         </div>
     </div>
     
