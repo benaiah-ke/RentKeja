@@ -5,7 +5,7 @@
 *Patrick Njiru<br>
 *Daniel Ng'etich
 # Description
-This project will enable users check for available accommodation areas and book whichever apartment that best suits their wants.
+RentKeja is a Moringa School pre-prep group project. This project will enable users check for available accommodation areas and book whichever apartment that best suits their wants.
 # Technologies Used
 *HTML<br>
 *CSS<br>
