@@ -1,9 +1,9 @@
 # RentKeja
 # Author
-*Noela Murugi<br>
-*Benaiah Praise<br>
-*Patrick Njiru<br>
-*Daniel Ng'etich
+*Noela Murugi (Javascript & Landing Page)<br>
+*Benaiah Praise (Backend - Property fetch from database)<br>
+*Patrick Njiru (Front-end - Single Property)<br>
+*Daniel Ng'etich (Front -end - Listings)
 # Description
 RentKeja is a Moringa School pre-prep group project. This project will enable users check for available accommodation areas and book whichever apartment that best suits their wants.
 # Technologies Used
